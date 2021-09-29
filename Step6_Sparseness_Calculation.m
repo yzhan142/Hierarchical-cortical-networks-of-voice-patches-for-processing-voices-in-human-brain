@@ -20,5 +20,5 @@ for i = 1:length(signal_Zscore) % electrode tag
             ii = ii + 1;
         end
     end
-    spar_n(i) = (1 - (sum(r)/60)^2/(sum(r^2/60)))/(1-1/60);
+    spar_n(i) = (1 - (sum(r)/60)^2/(sum(r.^2/60)))/(1-1/60);
 end
