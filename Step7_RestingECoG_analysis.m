@@ -108,6 +108,3 @@ f=data_fil.fsample;
      end
  end
  
-
-    CC_all_average(4,3) = mean(abs(CC_PT_M));
-end
