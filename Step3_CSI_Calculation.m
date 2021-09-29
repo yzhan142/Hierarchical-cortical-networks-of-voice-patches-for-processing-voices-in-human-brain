@@ -17,10 +17,10 @@ for i = 1:length(signal_final) % electrodes
         temp_big = find(temp_all >= mean(temp_all)); % selectiveCat
         temp_small = find(temp_all < mean(temp_all)); % nonSelectiveCat
         if (min(max(signal_final{i}(4:6,:)'))) > 2 %significant responses
-           Chi_SI(i) = (mean(temp_all(temp_big)) - mean(temp_all(temp_small)))...
+           CSI(i) = (mean(temp_all(temp_big)) - mean(temp_all(temp_small)))...
                /(mean(temp_all(temp_big)) + mean(temp_all(temp_small)));
         else
-           Chi_SI(i) = 0;
+           CSI(i) = 0;
         end
 end
 
