@@ -5,7 +5,7 @@
 %% edf file to mat file
 clear
 cfg=[];
-file_to_load='SOZ_locolazier.edf';
+file_to_load='rest.edf';
 cfg.dataset=file_to_load;
 cfg.continuous='yes';
 cfg.channel='all';
